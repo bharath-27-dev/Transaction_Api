@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 @RestController
 @RequestMapping("/api/v1/transactions")
+@CrossOrigin("http://localhost:3000")
 public class TransactionController {
     @Autowired
     private TransactionService transactionService;
